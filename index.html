@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="shelves.css">
+</head>
+
+<body>
+    <section>
+        <div class="workshop-container">
+            <div id="wall"></div>
+            <div id="floor"></div>
+            <div div id="bookcase">
+                <div id="shelf1"></div>
+                <div id="shelf1-gifts">
+                    <div class="gift" id="gift-1-1" onclick="openGift(pia)"></div>
+                    <div class="gift" id="gift-1-2" onclick="openGift(michael)"></div>
+                    <div class="gift" id="gift-1-3" onclick="openGift(britney)"></div>
+                    <div class="gift" id="gift-1-4" onclick="openGift(dolly)"></div>
+                    <div class="gift" id="gift-1-5" onclick="openGift(justin)"></div>
+                    <div class="gift" id="gift-1-6" onclick="openGift(dorte)"></div>
+                    <div class="gift" id="gift-1-7" onclick="openGift(fairy)"></div>
+                    <div class="gift" id="gift-1-8"></div>
+                </div>
+
+                <div id="shelf2"></div>
+                <div id="shelf2-gifts">
+                    <div class="gift" id="gift-2-1" onclick="openGift(pikachu)"></div>
+                    <div class="gift" id="gift-2-2" onclick="openGift(bent)"></div>
+                    <div class="gift" id="gift-2-3" onclick="openGift(boss)"></div>
+                    <div class="gift" id="gift-2-4" onclick="openGreenClue()"></div>
+                    <div class="gift" id="gift-2-5" onclick="openGift(bunny)"></div>
+                    <div class="gift" id="gift-2-6" onclick="openGift(rasmus)"></div>
+                    <div class="gift" id="gift-2-7" onclick="openGift(charmander)"></div>
+                    <div class="gift" id="gift-2-8" onclick="openGift(mrssanta)"></div>
+                </div>
+
+
+                <div id="shelf3"></div>
+                <div id="shelf3-gifts">
+                    <div class="gift" id="gift-3-1" onclick="openGift(johanne)"></div>
+                    <div class="gift" id="gift-3-2" onclick="openGift(harry)"></div>
+                    <div class="gift" id="gift-3-3" onclick="openGift(neighbour)"></div>
+                    <div class="gift" id="gift-3-4" onclick="openGift(jesus)"></div>
+                    <div class="gift" id="gift-3-5" onclick="openGift(squirtle)"></div>
+                    <div class="gift" id="gift-3-6" onclick="openGift(loa)"></div>
+                    <div class="gift" id="gift-3-7" onclick="openGift(napoleon)"></div>
+                    <div class="gift" id="gift-3-8" onclick="openGift(bedste)"></div>
+                </div>
+
+
+                <div id="shelf4"></div>
+                <div id="shelf4-gifts">
+                    <div class="gift" id="gift-4-1" onclick="openGift(god)"></div>
+                    <div class="gift" id="gift-4-2" onclick="openGift(kenzo)"></div>
+                    <div class="gift" id="gift-4-3"></div>
+                    <div class="gift" id="gift-4-4" onclick="openGift(donald)"></div>
+                    <div class="gift" id="gift-4-5" onclick="openGift(julie)"></div>
+                    <div class="gift" id="gift-4-6" onclick="openBlueClue()"></div>
+                    <div class="gift" id="gift-4-7" onclick="openGift(santa)"></div>
+                    <div class="gift" id="gift-4-8" onclick="openGift(pamela)"></div>
+                </div>
+
+                <div id="shelf5"></div>
+                <div id="shelf5-gifts">
+                    <div class="gift" id="gift-5-1" onclick="openGift(satan)"></div>
+                    <div class="gift" id="gift-5-2" onclick="openYellowClue()"></div>
+                    <div class="gift" id="gift-5-3" onclick="openGift(gretha)"></div>
+                    <div class="gift" id="gift-5-4" onclick="openGift(lasse)"></div>
+                    <div class="gift" id="gift-5-5" onclick="openGift(margrethe)"></div>
+                    <div class="gift" id="gift-5-6" onclick="openGift(pope)"></div>
+                    <div class="gift" id="gift-5-7" onclick="openGift(lucie)"></div>
+                    <div class="gift" id="gift-5-8" onclick="openGift(bulbasaur)"></div>
+                </div>
+
+            </div>
+            <div id="shelf-leg1"></div>
+            <div id="shelf-leg2"></div>
+            <div id="gift-content-container" class="hidden">
+                <div id="gift-receiver"></div>
+                <div id="nice-status"></div>
+                <div><b>Gift:</b></div>
+                <div id="gift-image"></div>
+                <button class="myButton" onclick="closeGift()">Re-wrap</button>
+                <div></div>
+            </div>
+            <div id="intro-container">
+                <h1>Panic at the North Pole</h1>
+                <div class="bold">Oh no, it seems that while Santa was sleeping yesterday, the naughty elves had a
+                    secret party and
+                    got shitfaced in the eggnog.
+                    During their monkey party, the naughty elves had the crazy idea of putting locks on all the
+                    presents, so that no
+                    kids
+                    would be able to open their gift on Christmas, causing all of them to tantrum and thereby starting
+                    the
+                    apocalypse. The elves were hoping that if the world ended, they never had to make gifts again and
+                    could
+                    party every night.
+                    <br><br>
+                    Your present is among the locked ones.
+                    <br><br>
+                    Fortunately, there was a few elves that stayed sober. They knew they would be unable to stop the
+                    drunken elves,
+                    but they managed to write down clues to the combinations of all locks. To ensure the drunken elves
+                    did not find
+                    and destroy the clues, the elves wrapping the clues as presents. As there are millions of presents
+                    in santa's
+                    workshop, they were unable to keep track of which presents contained the clues for your present.
+                    <br><br>
+                    It seems the you will have to search through the presents yourself, to find the clues for your
+                    present.
+                    <br><br>
+                </div>
+                <button class="myButton" onclick="closeIntro()">Ready to search</button>
+            </div>
+            <div id="green-clue-container" class="hidden">
+                <h1>You found a Clue!</h1>
+                <div class="bold">
+                    Looks like the IT elf made this clue. He's a big computer nerd and loves to tinker with the
+                    hardware. It seems
+                    he made some changes to the computer before writing the clue on the screen.
+                </div>
+                <img src="images/keyboardimage.png" alt="elf">
+                <br>
+                <button class="myButton" onclick="closeGreenClue()">Re-wrap</button>
+            </div>
+            <div id="blue-clue-container" class="hidden">
+                <h1>You found a Clue!</h1>
+                <div class="bold">
+                    One of santas most beloved elves is the creator of this clue. The Chief Toy Maker Elf. She is in
+                    charge of all the toys made in the workshop,
+                    and only perfection is good enough, as she knows only the best is good enough for the nice children.
+                    It looks like she hid the clue in one of
+                    her toys.
+                    <div class="toy-qr">
+                        <div class="toy-desc">The Toy Maker's Toy</div>
+                        <img src="images/puzzle-qr.png" alt="">
+                    </div>
+                </div>
+                <br>
+                <button class="myButton" onclick="closeBlueClue()">Re-wrap</button>
+            </div>
+            <div id="yellow-clue-container" class="hidden">
+                <h1>You found a Clue!</h1>
+                <div class="bold">
+                    This clue was definitely made by the Security elf. He is always worried about who might read his
+                    messages,
+                    so he encrypts them. Fortunately, he left his deciphering wheel.
+                    For the wheel to work, it's necessary to use the same setting as was used during encryption. The
+                    hint-word is
+                    something that's on top of every christmas tree. Solve the hint-word, find the setting and decrypt
+                    the message.
+                </div>
+                <div class="encrypt-container">
+                    <div class="hint-word-container">
+                        <div class="hint-desc"><u>Hint Word</u></div>
+                        <div class="hint-word">
+                            <div class="letter-container">Å</div>
+                            <div class="letter-container">ß</div>
+                            <div class="letter-container">K</div>
+                            <div class="letter-container">Ø</div>
+                        </div>
+                        <div class="hint-word-input">
+                            <input class="letter-input" type="text">
+                            <input class="letter-input" type="text">
+                            <input class="letter-input" type="text">
+                            <input class="letter-input" type="text">
+                        </div>
+                    </div>
+                    <div class="encrypt-word-container">
+                        <div class="encrypt-section">
+                            <div class="encrypt-word">
+                                <div class="letter-container">ß</div>
+                                <div class="letter-container">R</div>
+                                <div class="letter-container">Ø</div>
+                                <div class="letter-container">O</div>
+                                <div class="letter-container">O</div>
+                            </div>
+                            <div class="encrypt-word">
+                                <div class="letter-container">D</div>
+                                <div class="letter-container">O</div>
+                                <div class="letter-container">Ø</div>
+                                <div class="letter-container">Y</div>
+                            </div>
+                        </div>
+                        <div class="encrypt-section">
+                            <div class="encrypt-word">
+                                <div class="letter-container">O</div>
+                                <div class="letter-container">S</div>
+                                <div class="letter-container">Q</div>
+                                <div class="letter-container">R</div>
+                                <div class="letter-container">ß</div>
+                            </div>
+                            <div class="encrypt-word">
+                                <div class="letter-container">P</div>
+                                <div class="letter-container">Y</div>
+                                <div class="letter-container">!</div>
+                                <div class="letter-container">Ø</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <button class="myButton" onclick="closeYellowClue()">Re-wrap</button>
+                <div class="tool-container">
+                    <div class="tool-desc">Deciphering Wheel</div>
+                    <img src="images/cipher-qr.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="gift-receivers.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
