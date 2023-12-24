@@ -24,7 +24,7 @@
                     <div class="gift" id="gift-1-5" onclick="openGift(justin)"></div>
                     <div class="gift" id="gift-1-6" onclick="openGift(dorte)"></div>
                     <div class="gift" id="gift-1-7" onclick="openGift(fairy)"></div>
-                    <div class="gift" id="gift-1-8"></div>
+                    <div class="gift" id="gift-1-8" onclick="openBlackClue()"></div>
                 </div>
 
                 <div id="shelf2"></div>
@@ -57,7 +57,7 @@
                 <div id="shelf4-gifts">
                     <div class="gift" id="gift-4-1" onclick="openGift(god)"></div>
                     <div class="gift" id="gift-4-2" onclick="openGift(kenzo)"></div>
-                    <div class="gift" id="gift-4-3"></div>
+                    <div class="gift" id="gift-4-3" onclick="openRedClue()"></div>
                     <div class="gift" id="gift-4-4" onclick="openGift(donald)"></div>
                     <div class="gift" id="gift-4-5" onclick="openGift(julie)"></div>
                     <div class="gift" id="gift-4-6" onclick="openBlueClue()"></div>
@@ -110,10 +110,9 @@
                     did not find
                     and destroy the clues, the elves wrapping the clues as presents. As there are millions of presents
                     in santa's
-                    workshop, they were unable to keep track of which presents contained the clues for your present.
+                    workshop, they could not keep track of which presents contained the clues for your present.
                     <br><br>
-                    It seems the you will have to search through the presents yourself, to find the clues for your
-                    present.
+                    It seems the you will have to search through the presents yourself.
                     <br><br>
                 </div>
                 <button class="myButton" onclick="closeIntro()">Ready to search</button>
@@ -134,7 +133,7 @@
                 <div class="bold">
                     One of santas most beloved elves is the creator of this clue. The Chief Toy Maker Elf. She is in
                     charge of all the toys made in the workshop,
-                    and only perfection is good enough, as she knows only the best is good enough for the nice children.
+                    and only perfection is good enough.
                     It looks like she hid the clue in one of
                     her toys.
                     <div class="toy-qr">
@@ -143,7 +142,42 @@
                     </div>
                 </div>
                 <br>
-                <button class="myButton" onclick="closeBlueClue()">Re-wrap</button>
+                <button class="myButton" onclick="closeBlueClue()">Re-wrap</button>    
+            </div>
+            <div id="red-clue-container" class="hidden">
+                <h1>Is this a Clue?</h1>
+                <div class="bold">
+                    This is odd, seems like someone wrapped an old shopping list. Could this be a clue to one of the locks?
+                </div>
+                <div class="shopping-list-container">
+                    <div class="shopping-list-header">Remember to buy!</div>
+                    <div class="shopping-list-item">6 Potatoes</div>
+                    <div class="shopping-list-item">4 Reindeer Snacks</div>
+                    <div class="shopping-list-item">12 Christmas Tree</div>
+                    <div class="shopping-list-item">4 Roast Pork</div>
+                    <div class="shopping-list-item">12 Wrapping Paper</div>
+                    <div class="shopping-list-item">1 Vanilla Bean</div>
+                    <div class="shopping-list-item">6 Candles</div>
+                    <div class="shopping-list-item">6 Red Wine</div>
+                    <div class="shopping-list-item">11 Potato Chips</div>
+                    <div class="shopping-list-item">3 Whipped Cream</div>
+                    <div class="shopping-list-item">2 Axes</div>
+                </div>
+                <div class="shopping-input">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength = "1">
+                </div>
+                <br>
+                <button class="myButton" onclick="closeRedClue()">Re-wrap</button>
             </div>
             <div id="yellow-clue-container" class="hidden">
                 <h1>You found a Clue!</h1>
@@ -166,10 +200,10 @@
                             <div class="letter-container">Ø</div>
                         </div>
                         <div class="hint-word-input">
-                            <input class="letter-input" type="text">
-                            <input class="letter-input" type="text">
-                            <input class="letter-input" type="text">
-                            <input class="letter-input" type="text">
+                            <input class="letter-input" type="text" maxlength = "1">
+                            <input class="letter-input" type="text" maxlength = "1">
+                            <input class="letter-input" type="text" maxlength = "1">
+                            <input class="letter-input" type="text" maxlength = "1">
                         </div>
                     </div>
                     <div class="encrypt-word-container">
@@ -211,6 +245,59 @@
                     <div class="tool-desc">Deciphering Wheel</div>
                     <img src="images/cipher-qr.png" alt="">
                 </div>
+            </div>
+            <div id="black-clue-container" class="hidden">
+                <h1>Double locked!</h1>
+                <div class="bold">
+                    Oh no, it seems the naughty elves were extra naughty with this one. They found the clue box, and put a lock on that as well. You will need to unlock
+                    this present to get to the last clue.  
+                </div>
+                <div class="color-container">
+                    <div class="color-box" id="yellow-box"></div>
+                    <div class="operator">–</div>
+                    <div class="color-box" id="blue-box"></div>
+                    <div class="operator">+</div>
+                    <div class="color-box" id="green-box"></div>
+                    <div class="operator">–</div>
+                    <div class="color-box" id="red-box"></div>
+                </div>
+                <div class="full-lock">
+                    <div class="lock-positioner">
+                        <div class="lock-container">
+                            <div class="lock-wheel">
+                                <div class="lock-inc" onclick="incLock(1)">+</div>
+                                <div class="lock-display" id="lock1">0</div>
+                                <div class="lock-dec" onclick="decLock(1)">-</div>
+                            </div>
+                            <div class="lock-wheel">
+                                <div class="lock-inc" onclick="incLock(2)">+</div>
+                                <div class="lock-display" id="lock2">0</div>
+                                <div class="lock-dec" onclick="decLock(2)">-</div>
+                            </div>
+                            <div class="lock-wheel">
+                                <div class="lock-inc" onclick="incLock(3)">+</div>
+                                <div class="lock-display" id="lock3">0</div>
+                                <div class="lock-dec" onclick="decLock(3)">-</div>
+                            </div>
+                            <div class="lock-wheel">
+                                <div class="lock-inc" onclick="incLock(4)">+</div>
+                                <div class="lock-display" id="lock4">0</div>
+                                <div class="lock-dec" onclick="decLock(4)">-</div>
+                            </div>
+                            <div class="unlock-button" onclick="checkLock()">Unlock</div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <br>
+                <button class="myButton" onclick="closeBlackClue()">Re-wrap</button>
+            </div>
+            <div id="last-clue-container" class="hidden">
+                <h1>You solved it all</h1>
+                <div class="bold">
+                    Jeg har desværre ikke at lave den sidste ledetråd. Sig til hvis du ser denne besked.
+                </div>
+                <button class="myButton" onclick="closeLastClue()">Re-wrap</button>
             </div>
         </div>
     </section>
