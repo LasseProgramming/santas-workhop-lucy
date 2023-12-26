@@ -142,12 +142,13 @@
                     </div>
                 </div>
                 <br>
-                <button class="myButton" onclick="closeBlueClue()">Re-wrap</button>    
+                <button class="myButton" onclick="closeBlueClue()">Re-wrap</button>
             </div>
             <div id="red-clue-container" class="hidden">
                 <h1>Is this a Clue?</h1>
                 <div class="bold">
-                    This is odd, seems like someone wrapped an old shopping list. Could this be a clue to one of the locks?
+                    This is odd, seems like someone wrapped an old shopping list. Could this be a clue to one of the
+                    locks?
                 </div>
                 <div class="shopping-list-container">
                     <div class="shopping-list-header">Remember to buy!</div>
@@ -164,17 +165,17 @@
                     <div class="shopping-list-item">2 Axes</div>
                 </div>
                 <div class="shopping-input">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
-                    <input class="letter-input" type="text" maxlength = "1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
+                    <input class="letter-input" type="text" maxlength="1">
                 </div>
                 <br>
                 <button class="myButton" onclick="closeRedClue()">Re-wrap</button>
@@ -200,10 +201,10 @@
                             <div class="letter-container">Ø</div>
                         </div>
                         <div class="hint-word-input">
-                            <input class="letter-input" type="text" maxlength = "1">
-                            <input class="letter-input" type="text" maxlength = "1">
-                            <input class="letter-input" type="text" maxlength = "1">
-                            <input class="letter-input" type="text" maxlength = "1">
+                            <input class="letter-input" type="text" maxlength="1">
+                            <input class="letter-input" type="text" maxlength="1">
+                            <input class="letter-input" type="text" maxlength="1">
+                            <input class="letter-input" type="text" maxlength="1">
                         </div>
                     </div>
                     <div class="encrypt-word-container">
@@ -249,8 +250,9 @@
             <div id="black-clue-container" class="hidden">
                 <h1>Double locked!</h1>
                 <div class="bold">
-                    Oh no, it seems the naughty elves were extra naughty with this one. They found the clue box, and put a lock on that as well. You will need to unlock
-                    this present to get to the last clue.  
+                    Oh no, it seems the naughty elves were extra naughty with this one. They found the clue box, and put
+                    a lock on that as well. You will need to unlock
+                    this present to get to the last clue.
                 </div>
                 <div class="color-container">
                     <div class="color-box" id="yellow-box"></div>
@@ -286,17 +288,34 @@
                             </div>
                             <div class="unlock-button" onclick="checkLock()">Unlock</div>
                         </div>
-                        
+
                     </div>
                 </div>
                 <br>
                 <button class="myButton" onclick="closeBlackClue()">Re-wrap</button>
             </div>
             <div id="last-clue-container" class="hidden">
-                <h1>You solved it all</h1>
+                <h1>The Final Clue!</h1>
                 <div class="bold">
-                    Jeg har desværre ikke at lave den sidste ledetråd. Sig til hvis du ser denne besked.
+                    You are almost there, just 1 combination remaining. The last clue was made by the Reindeer
+                    Caretaker. She's
+                    making sure all the reindeers are ready for their yearly trip. She will tell anyone who cares to
+                    listen how much
+                    of an ass Rudolph is.<br>
+                    The clue seems to be a picture of the reindeer patch and weird looking symbols. How odd.<br><br>
                 </div>
+                <div class="reindeer-container">
+                    <div class="reindeer-img">
+                        <img src="images/reindeer-patch.png" alt=""> <br>
+                    </div>
+                    <div class="pigpen">
+                        <div id="pigpen2"></div>
+                        <div id="pigpen4"></div>
+                        <div id="pigpen1"></div>
+                        <div id="pigpen2"></div>
+                    </div>
+                </div>
+
                 <button class="myButton" onclick="closeLastClue()">Re-wrap</button>
             </div>
         </div>

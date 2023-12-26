@@ -77,12 +77,12 @@ const decLock = (num) => {
 
 const checkLock = () => {
     const result = parseInt(document.getElementById("lock" + 1).innerHTML +
-                    document.getElementById("lock" + 2).innerHTML +
-                    document.getElementById("lock" + 3).innerHTML +
-                    document.getElementById("lock" + 4).innerHTML 
+        document.getElementById("lock" + 2).innerHTML +
+        document.getElementById("lock" + 3).innerHTML +
+        document.getElementById("lock" + 4).innerHTML
     )
 
-    if ( result == 1348) {
+    if (result == 1348) {
         document.getElementById('black-clue-container').classList.add('hidden');
         document.getElementById('last-clue-container').classList.remove('hidden');
     }

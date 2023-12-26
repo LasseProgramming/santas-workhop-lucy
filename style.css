@@ -530,7 +530,7 @@ h1 {
     line-height: 2;
 }
 
-.color-container{
+.color-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -542,7 +542,7 @@ h1 {
     font-size: 40px;
 }
 
-.color-box { 
+.color-box {
     width: 80px;
     height: 80px;
     border: 1px solid black;
@@ -605,7 +605,8 @@ h1 {
     box-shadow: inset 1px 1px 2px black, inset -1px -1px 2px;
 }
 
-.lock-inc, .lock-dec {
+.lock-inc,
+.lock-dec {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -622,7 +623,8 @@ h1 {
     cursor: pointer;
 }
 
-.lock-inc:active, .lock-dec:active {
+.lock-inc:active,
+.lock-dec:active {
     box-shadow: 0px 0px transparent;
 }
 
@@ -678,4 +680,49 @@ h1 {
     padding: 10px 30px;
     text-align: center;
     line-height: 2;
+}
+
+.reindeer-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 30px;
+}
+
+.reindeer-img img {
+    box-shadow: 2px 2px 5px black;
+}
+
+.pigpen {
+    width: 120px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+#pigpen2 {
+    width: 80px;
+    height: 80px;
+    border-bottom: 3px solid black;
+    border-left: 3px solid black;
+}
+
+#pigpen4 {
+    width: 80px;
+    height: 80px;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+}
+
+#pigpen1 {
+    width: 80px;
+    height: 80px;
+    border: 3px solid black;
 }
