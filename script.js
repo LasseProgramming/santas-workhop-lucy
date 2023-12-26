@@ -82,7 +82,7 @@ const checkLock = () => {
         document.getElementById("lock" + 4).innerHTML
     )
 
-    if (result == 1348) {
+    if (result == 2412) {
         document.getElementById('black-clue-container').classList.add('hidden');
         document.getElementById('last-clue-container').classList.remove('hidden');
     }
